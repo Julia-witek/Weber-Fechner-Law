@@ -5,10 +5,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
-
 import java.io.IOException;
 
-import static sample.DrawingCircles.*;
 
 public class MenuController {
 
@@ -28,11 +26,21 @@ public class MenuController {
         }
         mainController.setScreen(pane);
 
-        float c = (float) (Math.random() * 200);
-        float v = (float) (Math.random() * 200);
-        Circle circlee = new Circle(10+c, 200 + v, 6, Color.BLACK);
-        pane.getChildren().add(circlee);
+        for(int i=0; i<20; i++) {
+            float x = (float) (Math.random() * 400);
+            float y = (float) (Math.random() * 350);
+            Circle leftCircle = new Circle(100 + x, 100 + y, 8, Color.BLACK);
 
+            pane.getChildren().add(leftCircle);
+        }
+
+        for(int i=0; i<22; i++) {
+            float x = (float) (Math.random() * 400);
+            float y = (float) (Math.random() * 350);
+            Circle rightCircle = new Circle(700 + x, 100 + y, 8, Color.BLACK);
+
+            pane.getChildren().add(rightCircle);
+        }
     }
 
     public void setMainController(MainController mainController) {
