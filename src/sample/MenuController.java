@@ -3,6 +3,8 @@ package sample;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
 
 import java.io.IOException;
 
@@ -26,9 +28,10 @@ public class MenuController {
         }
         mainController.setScreen(pane);
 
-        /*for (int i = 0; i < 20; i ++){
-            DrawingCircles.drawLeftCircles();
-        }*/
+        float c = (float) (Math.random() * 200);
+        float v = (float) (Math.random() * 200);
+        Circle circlee = new Circle(10+c, 200 + v, 6, Color.BLACK);
+        pane.getChildren().add(circlee);
 
     }
 

@@ -6,12 +6,12 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FirstController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FirstController">
    <children>
-      <Line endX="-100.0" endY="400.0" layoutX="300.0" startX="-100.0" startY="59.5" />
-      <Button layoutX="280.0" layoutY="340.0" mnemonicParsing="false" text="Prawej" />
-      <Button layoutX="75.0" layoutY="340.0" mnemonicParsing="false" text="Lewej" />
-      <Label layoutX="63.0" layoutY="14.0" prefHeight="34.0" prefWidth="274.0" text="Po której stronie znajduje się więcej kulek?" textAlignment="CENTER">
+      <Line endX="-100.0" endY="400.0" layoutX="700.0" layoutY="85.0" scaleZ="0.5" startX="-100.0" startY="20.0" />
+      <Button layoutX="735.0" layoutY="533.0" mnemonicParsing="false" text="Prawej" />
+      <Button layoutX="425.0" layoutY="533.0" mnemonicParsing="false" text="Lewej" />
+      <Label layoutX="464.0" layoutY="14.0" prefHeight="34.0" prefWidth="274.0" text="Po której stronie znajduje się więcej kulek?" textAlignment="CENTER">
          <font>
             <Font size="14.0" />
          </font>

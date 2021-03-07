@@ -2,8 +2,10 @@ package sample;
 
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
+import javafx.scene.shape.Rectangle;
 
 public class DrawingCircles {
+    public Rectangle rectangle = new Rectangle();
 
     public static void drawLeftCircles(){
         Circle circle;
