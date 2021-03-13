@@ -5,7 +5,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
-
 import java.io.IOException;
 
 public class MainController {
@@ -14,6 +13,7 @@ public class MainController {
 
     @FXML
     public void initialize (){
+
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("MenuScreen.fxml"));
         FirstController firstController = new FirstController();
 
@@ -21,8 +21,6 @@ public class MainController {
 
         try {
             pane = loader.load();
-
-
         }
         catch (IOException e){
             e.printStackTrace();
@@ -32,11 +30,11 @@ public class MainController {
         menuController.setMainController(this);
         setScreen(pane);
 
-
     }
 
     public void setScreen(Pane pane) {
         mainStackPane.getChildren().clear();
         mainStackPane.getChildren().add(pane);
     }
+
 }
