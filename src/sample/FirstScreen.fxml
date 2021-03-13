@@ -11,7 +11,7 @@
    <children>
       <Line endX="-100.0" endY="400.0" layoutX="700.0" layoutY="85.0" scaleZ="0.5" startX="-100.0" startY="-15.0" />
       <Button layoutX="735.0" layoutY="533.0" mnemonicParsing="false" text="Prawej" />
-      <Button layoutX="425.0" layoutY="533.0" mnemonicParsing="false" text="Lewej" />
+      <Button layoutX="425.0" layoutY="533.0" mnemonicParsing="false" onAction="#pressButton" text="Lewej" />
       <Label layoutX="464.0" layoutY="14.0" prefHeight="34.0" prefWidth="274.0" text="Po której stronie znajduje się więcej kulek?" textAlignment="CENTER">
          <font>
             <Font size="14.0" />

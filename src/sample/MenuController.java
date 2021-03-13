@@ -14,6 +14,7 @@ public class MenuController {
 
     @FXML
     public void Continue (){
+
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("FirstScreen.fxml"));
         Pane pane = null;
 
@@ -24,26 +25,25 @@ public class MenuController {
         catch (IOException e){
             e.printStackTrace();
         }
+
+            mainController.setScreen(pane);
+
+            anotherScreen screen = new anotherScreen();
+            screen.createCircle(pane);
+
+        FirstController firstController = loader.getController();
+        firstController.setMenuController(this);
+        //setNewScreen(pane);
         mainController.setScreen(pane);
-
-        for(int i=0; i<20; i++) {
-            float x = (float) (Math.random() * 400);
-            float y = (float) (Math.random() * 350);
-            Circle leftCircle = new Circle(100 + x, 100 + y, 8, Color.BLACK);
-
-            pane.getChildren().add(leftCircle);
         }
 
-        for(int i=0; i<22; i++) {
-            float x = (float) (Math.random() * 400);
-            float y = (float) (Math.random() * 350);
-            Circle rightCircle = new Circle(700 + x, 100 + y, 8, Color.BLACK);
-
-            pane.getChildren().add(rightCircle);
-        }
-    }
 
     public void setMainController(MainController mainController) {
         this.mainController = mainController;
+    }
+
+    public void setNewScreen(Pane pane) {
+       mainController.mainStackPane.getChildren().clear();
+       mainController.mainStackPane.getChildren().add(pane);
     }
 }
