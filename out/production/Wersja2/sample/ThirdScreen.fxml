@@ -7,18 +7,17 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ThirdController">
    <children>
-      <Line endX="-100.0" endY="400.0" layoutX="710.0" layoutY="95.0" startX="-100.0" startY="-15.0" />
-      <Button layoutX="745.0" layoutY="543.0" mnemonicParsing="false" onAction="#pressRightButton" text="Prawej" />
-      <Button layoutX="435.0" layoutY="543.0" mnemonicParsing="false" onAction="#pressLeftButton" text="Lewej" />
-      <Label layoutX="474.0" layoutY="24.0" prefHeight="34.0" prefWidth="274.0" text="Po której stronie znajduje się więcej kulek?" textAlignment="CENTER">
+      <Button focusTraversable="false" layoutX="859.0" layoutY="539.0" mnemonicParsing="false" onAction="#pressRightButton" prefHeight="34.0" prefWidth="83.0" text="Prawej" />
+      <Button focusTraversable="false" layoutX="259.0" layoutY="539.0" mnemonicParsing="false" onAction="#pressLeftButton" prefHeight="34.0" prefWidth="83.0" text="Lewej" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="390.0" layoutX="80.0" layoutY="80.0" stroke="#b1b0b0" strokeType="INSIDE" width="440.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="390.0" layoutX="680.0" layoutY="80.0" stroke="#b1b0b0" strokeType="INSIDE" width="440.0" />
+      <Line endX="-100.0" endY="420.0" layoutX="700.0" layoutY="85.0" scaleZ="0.5" startX="-100.0" startY="-15.0" stroke="#b1b0b0" />
+      <Label layoutX="407.0" layoutY="-17.0" prefHeight="34.0" prefWidth="387.0" text="Po której stronie znajduje się więcej kulek?" textAlignment="CENTER">
          <font>
-            <Font size="14.0" />
+            <Font name="System Bold" size="19.0" />
          </font>
       </Label>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="390.0" layoutX="90.0" layoutY="90.0" stroke="#b1b0b0" strokeType="INSIDE" width="440.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="390.0" layoutX="690.0" layoutY="90.0" stroke="#b1b0b0" strokeType="INSIDE" width="440.0" />
    </children>
 </Pane>
