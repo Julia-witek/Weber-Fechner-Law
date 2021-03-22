@@ -9,8 +9,8 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FourthController">
    <children>
-      <Button focusTraversable="false" layoutX="859.0" layoutY="539.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="83.0" text="Prawej" />
-      <Button focusTraversable="false" layoutX="259.0" layoutY="539.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="83.0" text="Lewej" />
+      <Button focusTraversable="false" layoutX="859.0" layoutY="539.0" mnemonicParsing="false" onAction="#pressRightButton" prefHeight="34.0" prefWidth="83.0" text="Prawej" />
+      <Button focusTraversable="false" layoutX="259.0" layoutY="539.0" mnemonicParsing="false" onAction="#pressLeftButton" prefHeight="34.0" prefWidth="83.0" text="Lewej" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="390.0" layoutX="80.0" layoutY="80.0" stroke="#b1b0b0" strokeType="INSIDE" width="440.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="390.0" layoutX="680.0" layoutY="80.0" stroke="#b1b0b0" strokeType="INSIDE" width="440.0" />
       <Line endX="-100.0" endY="420.0" layoutX="700.0" layoutY="85.0" scaleZ="0.5" startX="-100.0" startY="-15.0" stroke="#b1b0b0" />
@@ -19,5 +19,6 @@
             <Font name="System Bold" size="19.0" />
          </font>
       </Label>
+      <Button layoutX="37.0" layoutY="493.0" mnemonicParsing="false" text="4" />
    </children>
 </Pane>

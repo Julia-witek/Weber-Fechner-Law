@@ -7,9 +7,16 @@ import java.io.IOException;
 
 public class SecondController {
     private FirstController firstController;
+    String ans2 ="";
+
 
     @FXML
     public void pressLeftButton(){
+
+        ans2 = "L ";
+        ans2 +=  firstController.ans;
+
+
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("ThirdScreen.fxml"));
         Pane pane = null;
 
@@ -19,6 +26,8 @@ public class SecondController {
         catch (IOException e){
             e.printStackTrace();
         }
+            timer timer = new timer(pane);
+            timer.startTimer();
 
             firstController.setNew2Screen(pane);
             anotherScreen screen = new anotherScreen();
@@ -29,8 +38,13 @@ public class SecondController {
     }
 
     public void pressRightButton(){
+        ans2 = "P ";
+        ans2 +=  firstController.ans;
+
+
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("ThirdScreen.fxml"));
         Pane pane = null;
+
 
         try {
             pane = loader.load();
@@ -38,6 +52,9 @@ public class SecondController {
         catch (IOException e){
             e.printStackTrace();
         }
+
+            timer timer = new timer(pane);
+            timer.startTimer();
 
             firstController.setNew2Screen(pane);
             anotherScreen screen = new anotherScreen();
@@ -55,4 +72,6 @@ public class SecondController {
         firstController.setNew2Screen(pane);
     }
 
+    public void setFirstController(Runnable runnable) {
+    }
 }

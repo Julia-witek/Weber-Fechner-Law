@@ -22,14 +22,11 @@ public class timer  implements Initializable{
     class bg_Thread implements Runnable {
         @Override
         public void run() {
-            for (int i = 0; i < 100; i++) {
+            for (int i = 0; i < 101; i++) {
                 try {
                     p.setProgress(i / 100.0);
                     Thread.sleep(100);
                     info=i;
-                   // if(info ==100) {
-
-                    //}
 
                 } catch (InterruptedException e) {
                     e.printStackTrace();

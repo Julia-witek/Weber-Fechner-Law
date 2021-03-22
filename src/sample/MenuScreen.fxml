@@ -12,10 +12,10 @@
    <children>
       <Button blendMode="DARKEN" cacheHint="QUALITY" focusTraversable="false" layoutX="565.0" layoutY="491.0" mnemonicParsing="false" onAction="#Continue" pickOnBounds="false" prefHeight="34.0" prefWidth="83.0" text="Kontynuuj" textOverrun="LEADING_WORD_ELLIPSIS" />
       <Label layoutX="472.0" layoutY="338.0" text="Imię:" />
-      <TextField focusTraversable="false" layoutX="581.0" layoutY="334.0" />
+      <TextField fx:id="textFieldName" focusTraversable="false" layoutX="581.0" layoutY="334.0" />
       <Label layoutX="472.0" layoutY="375.0" text="Wiek:" />
-      <TextField focusTraversable="false" layoutX="581.0" layoutY="371.0" />
-      <Label layoutX="427.0" layoutY="83.0" prefHeight="188.0" prefWidth="576.0" text="Szanowni Państwo, jesteśmy studentkami Akademii Górniczo-Hutniczej w Krakowie. Przeprowadzamy badanie nad prawem Webera-Fechnera, a dokładniej nad postrzeganiem liczebności. Na jedno pytanie przypada 10 sekund, pytań jest 20, więc całość nie powinna zająć więcej niż 4 minuty. Z góry dziękujemy za pomoc! :)" textAlignment="JUSTIFY" wrapText="true">
+      <TextField fx:id="textFieldAge" focusTraversable="false" layoutX="581.0" layoutY="371.0" />
+      <Label layoutX="427.0" layoutY="83.0" prefHeight="188.0" prefWidth="576.0" text="Cześć, jesteśmy studentkami Akademii Górniczo-Hutniczej w Krakowie. Przeprowadzamy badanie nad prawem Webera-Fechnera, a dokładniej nad postrzeganiem liczebności. Pytań jest 20, spróbuj odpowiedzieć na każde w jak najkrótszym czasie. Pasek w lewym górnym rogu, odmierza 10 sekund. Jeśli nie zdążysz, nic się nie stanie, udziel odpowiedzi mimo to. Dziękujemy za pomoc! " textAlignment="JUSTIFY" wrapText="true">
          <font>
             <Font size="14.0" />
          </font>
@@ -25,10 +25,11 @@
             <Font name="Verdana Bold" size="26.0" />
          </font>
       </Label>
-      <ImageView fitHeight="233.0" fitWidth="149.0" layoutX="211.0" layoutY="6.0">
+      <ImageView fitHeight="245.0" fitWidth="168.0" layoutX="192.0" layoutY="6.0">
          <image>
             <Image url="@162931997_128514092545859_1575603177368292749_n.png" />
          </image>
       </ImageView>
+      <Label fx:id="textLabel" layoutX="634.0" layoutY="428.0" prefHeight="25.0" prefWidth="56.0" text="Label" />
    </children>
 </Pane>
