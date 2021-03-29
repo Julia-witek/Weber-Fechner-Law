@@ -13,7 +13,8 @@ public class ResultController {
     Label nameLabel = new Label();
     @FXML
     public void initialize() {
-    nameLabel.textProperty().bind(person.getPropertyName());
+
+        nameLabel.textProperty().bind(person.getPropertyName());
     }
 
     public void setFourthController(FourthController fourthController) {

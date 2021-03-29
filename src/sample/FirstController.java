@@ -27,7 +27,7 @@ public class FirstController {
 
     @FXML
     public void pressLeftButton(){
-        ans="L";
+        ans= menuController.name + "L ";
 
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("SecondScreen.fxml"));
         Pane pane = null;
@@ -53,7 +53,7 @@ public class FirstController {
     }
 
     public void pressRightButton(){
-        ans="P";
+        ans= menuController.name + "P ";
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("SecondScreen.fxml"));
         Pane pane = null;
 

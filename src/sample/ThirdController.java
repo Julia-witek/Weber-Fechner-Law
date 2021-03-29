@@ -15,8 +15,7 @@ public class ThirdController {
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("FourthScreen.fxml"));
         Pane pane = null;
 
-        ans3 = "L ";
-        ans3 +=  secondController.ans2;
+        ans3 =  secondController.ans2 + "L ";
 
 
         try {
@@ -41,8 +40,7 @@ public class ThirdController {
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("FourthScreen.fxml"));
         Pane pane = null;
 
-        ans3 = "P ";
-        ans3 +=  secondController.ans2;
+        ans3 =  secondController.ans2 + "P ";
 
 
         try {

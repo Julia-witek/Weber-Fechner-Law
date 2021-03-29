@@ -13,8 +13,7 @@ public class SecondController {
     @FXML
     public void pressLeftButton(){
 
-        ans2 = "L ";
-        ans2 +=  firstController.ans;
+        ans2 =  firstController.ans + "L ";
 
 
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("ThirdScreen.fxml"));
@@ -38,8 +37,7 @@ public class SecondController {
     }
 
     public void pressRightButton(){
-        ans2 = "P ";
-        ans2 +=  firstController.ans;
+        ans2 =  firstController.ans + "P ";
 
 
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("ThirdScreen.fxml"));

@@ -30,6 +30,7 @@ public class MenuController {
     private Person person = new Person();
     @FXML
     private Label textLabel = new Label();
+    String name;
 
     @FXML
     public void initialize(){
@@ -40,29 +41,7 @@ public class MenuController {
 
     @FXML
     public void Continue () {
-
-        java.io.FileWriter fw = null;
-
-        try {
-            fw = new java.io.FileWriter("data.txt");
-        } catch (
-                IOException e) {
-            System.out.println("Blad przy otwieraniu!");
-        }
-
-        BufferedWriter bw = new BufferedWriter(fw);
-        try {
-            bw.write(person.getPropertyName().getValue() + " " + person.getPropertyAge().getValue());
-            bw.newLine();
-        } catch (IOException e) {
-            System.out.println("Blad przy zapisie!");
-        }
-        try {
-            bw.close();
-            fw.close();
-        } catch (IOException e) {
-            System.out.println("Blad przy zamknieciu!");
-        }
+     name = person.getPropertyName().getValue() + " " + person.getPropertyAge().getValue() + "\n";
 
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("FirstScreen.fxml"));
         Pane pane = null;

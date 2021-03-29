@@ -20,6 +20,7 @@ public class Main extends Application {
         StackPane stackPane = loader.load();
         Scene scene = new Scene(stackPane, 1266, 668);
 
+
         stage.setScene(scene);
         stage.setTitle("Projekt");
         stage.setFullScreen(true);
@@ -27,6 +28,7 @@ public class Main extends Application {
         FirstController firstController = new FirstController();
         SecondController secondController = new SecondController();
         ThirdController thirdController = new ThirdController();
+
 
     }
 }
